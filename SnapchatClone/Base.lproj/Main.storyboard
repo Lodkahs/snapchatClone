@@ -176,10 +176,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="2Tc-05-8Nd"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="leQ-4H-zhk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQT-Fz-noG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973.2824427480916" y="1090.1408450704225"/>
+            <point key="canvasLocation" x="1337" y="1094"/>
         </scene>
         <!--Feed-->
         <scene sceneID="v8D-1R-J3P">
@@ -249,7 +252,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Ahp-kS-pgL">
             <objects>
-                <tabBarController id="91x-pU-j5G" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="91x-pU-j5G" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="t0E-Py-o7Z"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qn5-Gj-EHU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
