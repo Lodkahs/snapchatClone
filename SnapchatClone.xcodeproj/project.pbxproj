@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4999B78929C4E7E100B0DD73 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999B78829C4E7E100B0DD73 /* UserSingleton.swift */; };
 		49C3CFC229C240130017C8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3CFC129C240130017C8EE /* AppDelegate.swift */; };
 		49C3CFC429C240130017C8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3CFC329C240130017C8EE /* SceneDelegate.swift */; };
 		49C3CFC629C240130017C8EE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3CFC529C240130017C8EE /* SignInVC.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4999B78829C4E7E100B0DD73 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		49C3CFBE29C240130017C8EE /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C3CFC129C240130017C8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C3CFC329C240130017C8EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4999B78729C4E69500B0DD73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4999B78829C4E7E100B0DD73 /* UserSingleton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		49C3CFB529C240130017C8EE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		49C3CFC029C240130017C8EE /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				4999B78729C4E69500B0DD73 /* Model */,
 				49C860E129C37D83000AF549 /* Delegates */,
 				49C860E029C37D5C000AF549 /* ViewControllers */,
 				49C3CFC729C240130017C8EE /* Main.storyboard */,
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4999B78929C4E7E100B0DD73 /* UserSingleton.swift in Sources */,
 				49C860DB29C37D27000AF549 /* FeedVC.swift in Sources */,
 				49C3CFC629C240130017C8EE /* SignInVC.swift in Sources */,
 				49C3CFC229C240130017C8EE /* AppDelegate.swift in Sources */,
