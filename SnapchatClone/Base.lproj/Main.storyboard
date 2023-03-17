@@ -120,7 +120,7 @@
                                     <action selector="uploadClickedButton:" destination="hRd-WM-1Rq" eventType="touchUpInside" id="xIt-pK-sXJ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pVL-a8-Hxg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="pVL-a8-Hxg">
                                 <rect key="frame" x="48" y="128" width="297" height="413"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="413" id="0aU-dC-N3h"/>
@@ -273,6 +273,7 @@
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="select" width="297" height="413"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
