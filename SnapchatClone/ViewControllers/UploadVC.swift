@@ -23,6 +23,8 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     
     @IBAction func uploadClickedButton(_ sender: Any) {
         
+        //storage
+        
         let storage = Storage.storage()
         let storageReference = storage.reference()
         
@@ -42,24 +44,63 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                 } else {
                     
                     imageReference.downloadURL { url, error in
+                        
                         if error == nil {
                             
                             let imageURL = url?.absoluteString
                             
+                            //firestore
+                            
                             let firestore = Firestore.firestore()
                             
-                            let snapDictionary = ["imageURL" : imageURL!, "snapOwner" : UserSingleton.sharedUserInfo.username, "date" : FieldValue.serverTimestamp()] as [String : Any]
-                            
-                            firestore.collection("Snaps").addDocument(data: snapDictionary) { error in
+                            firestore.collection("Snaps").whereField("snapOwner", isEqualTo: UserSingleton.sharedUserInfo.username).getDocuments { snapshot, error in
                                 
                                 if error != nil {
                                     self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
                                 } else {
-                                    self.tabBarController?.selectedIndex = 0
-                                    self.uploadImageView.image = UIImage(named: "select")
+                                    if snapshot?.isEmpty == false && snapshot != nil {
+                                        
+                                        for document in snapshot!.documents {
+                                            
+                                            let documentId = document.documentID
+                                            
+                                            if var imageURLArray = document.get("imageURLArray") as? [String] {
+                                                
+                                                imageURLArray.append(imageURL!)
+                                                
+                                                let additionalDictionary = ["imageURLArray" : imageURLArray] as [String : Any]
+                                                
+                                                firestore.collection("Snaps").document(documentId).setData(additionalDictionary , merge: true) { error in
+                                                    if error == nil {
+                                                        self.tabBarController?.selectedIndex = 0
+                                                        self.uploadImageView.image = UIImage(named: "select")
+                                                    }
+                                                }
+                                                
+                                            } else {
+                                                //
+                                            }
+                                                
+                                                
+                                        }
+                                    } else {
+                                        let snapDictionary = ["imageURLArray" : [imageURL!], "snapOwner" : UserSingleton.sharedUserInfo.username, "date" : FieldValue.serverTimestamp()] as [String : Any]
+                                        
+                                        firestore.collection("Snaps").addDocument(data: snapDictionary) { error in
+                                            
+                                            if error != nil {
+                                                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
+                                            } else {
+                                                self.tabBarController?.selectedIndex = 0
+                                                self.uploadImageView.image = UIImage(named: "select")
+                                            }
+                                            
+                                        }
+                                    }
                                 }
-                                
                             }
+                            
+                            
                             
                         }
                     }
