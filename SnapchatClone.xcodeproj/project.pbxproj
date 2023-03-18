@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		492F16C729C5027A00297F0F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F16C629C5027A00297F0F /* FeedCell.swift */; };
+		495AB29B29C5A8B300D8B152 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495AB29A29C5A8B300D8B152 /* Snap.swift */; };
 		4999B78929C4E7E100B0DD73 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999B78829C4E7E100B0DD73 /* UserSingleton.swift */; };
 		49C3CFC229C240130017C8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3CFC129C240130017C8EE /* AppDelegate.swift */; };
 		49C3CFC429C240130017C8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3CFC329C240130017C8EE /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		492F16C629C5027A00297F0F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		495AB29A29C5A8B300D8B152 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		4999B78829C4E7E100B0DD73 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		49C3CFBE29C240130017C8EE /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C3CFC129C240130017C8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				4999B78829C4E7E100B0DD73 /* UserSingleton.swift */,
+				495AB29A29C5A8B300D8B152 /* Snap.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4999B78929C4E7E100B0DD73 /* UserSingleton.swift in Sources */,
+				495AB29B29C5A8B300D8B152 /* Snap.swift in Sources */,
 				49C860DB29C37D27000AF549 /* FeedVC.swift in Sources */,
 				49C3CFC629C240130017C8EE /* SignInVC.swift in Sources */,
 				49C3CFC229C240130017C8EE /* AppDelegate.swift in Sources */,
