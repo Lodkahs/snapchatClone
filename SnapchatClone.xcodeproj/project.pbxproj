@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492F16C729C5027A00297F0F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F16C629C5027A00297F0F /* FeedCell.swift */; };
 		4999B78929C4E7E100B0DD73 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999B78829C4E7E100B0DD73 /* UserSingleton.swift */; };
 		49C3CFC229C240130017C8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3CFC129C240130017C8EE /* AppDelegate.swift */; };
 		49C3CFC429C240130017C8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3CFC329C240130017C8EE /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492F16C629C5027A00297F0F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		4999B78829C4E7E100B0DD73 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		49C3CFBE29C240130017C8EE /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C3CFC129C240130017C8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				49C860E129C37D83000AF549 /* Delegates */,
 				49C860E029C37D5C000AF549 /* ViewControllers */,
 				49C3CFC729C240130017C8EE /* Main.storyboard */,
+				492F16C629C5027A00297F0F /* FeedCell.swift */,
 				49C3CFCA29C240140017C8EE /* Assets.xcassets */,
 				49C3CFCC29C240140017C8EE /* LaunchScreen.storyboard */,
 				49C3CFCF29C240140017C8EE /* Info.plist */,
@@ -257,6 +260,7 @@
 				49C860E329C38651000AF549 /* SnapVC.swift in Sources */,
 				49C3CFC429C240130017C8EE /* SceneDelegate.swift in Sources */,
 				49C860DF29C37D4C000AF549 /* SettingsVC.swift in Sources */,
+				492F16C729C5027A00297F0F /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
